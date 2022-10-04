@@ -1,0 +1,22 @@
+{
+  "name": "fast-components-poc",
+  "packageManager": "yarn@3.2.3",
+  "type": "module",
+  "scripts": {
+    "build:esm": "tsc",
+    "build:iife": "node ./esbuild",
+    "clean:build": "rimraf ./dist"
+  },
+  "devDependencies": {
+    "esbuild": "^0.15.10",
+    "rimraf": "^3.0.2",
+    "serve": "^14.0.1",
+    "tslib": "^2.4.0",
+    "typescript": "4.6.2"
+  },
+  "dependencies": {
+    "@lion/button": "^0.18.1",
+    "@lion/core": "^0.24.0",
+    "lit": "^2.3.1"
+  }
+}

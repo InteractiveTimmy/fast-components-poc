@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello!</title>
+    <meta name="description" content="description"/>
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <style type="text/css">.body { width: auto; }</style>
+    <script type="text/javascript" src="./dist/split/components/button.js"></script>
+  </head>
+  <body>
+    <pref-button onclick="handlePress()">hello world div</pref-button>
+    <div id="output"></div>
+
+    <script>
+      function handlePress() {
+        const element = document.getElementById('output');
+
+        if (!output) {
+          return;
+        }
+
+        let presses = Number(element.innerHTML.length > 0 ? element.innerHTML : '0');
+
+        presses += 1;
+
+        element.innerHTML = `${presses}`
+      }
+    </script>
+  </body>
+</html>
